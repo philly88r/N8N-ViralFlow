@@ -156,7 +156,7 @@
     {
       "parameters": {
         "promptType": "define",
-        "text": "=User Input:\n{{ $json.output }}\n{{ $('Code10').item.json.topic }}\n{{ $('Code10').item.json.subtopic }}\nFacts: ",
+        "text": "=User Input:\n{{ $json.output }}\n{{ $('brain rotter').item.json['The Main Topic'] }}\nFacts: ",
         "hasOutputParser": true,
         "messages": {
           "messageValues": [

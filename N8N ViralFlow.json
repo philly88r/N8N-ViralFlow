@@ -1032,20 +1032,19 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "http://host.docker.internal:8004/tts",
-        "sendHeaders": true,
-        "headerParameters": {
-          "parameters": [
-            {
-              "name": "accept",
-              "value": "application/json"
-            }
-          ]
-        },
+        "url": "https://global.aiplatform.googleapis.com/v1/projects/root-bricolage-491415-q4/locations/global/publishers/google/models/gemini-2.5-flash-preview-tts:generateContent",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\n  \"text\": {{ JSON.stringify($('Code2').item.json.output) }},\n  \"voice_mode\": \"clone\",\n  \"predefined_voice_id\": \"\",\n  \"reference_audio_filename\": \"voice_preview_jonas - deep, commercial and dramatic.mp3\",\n  \"output_format\": \"wav\",\n  \"split_text\": true,\n  \"chunk_size\": 120,\n  \"temperature\": 0.6,\n  \"exaggeration\":0.8,\n  \"cfg_weight\": 0.3,\n  \"seed\": 0,\n  \"speed_factor\": 1,\n\"return_timestamps\": true,\n  \"language\": \"en\"\n}",
-        "options": {}
+        "jsonBody": "={\n  \"contents\": [\n    {\n      \"role\": \"user\",\n      \"parts\": [\n        {\n          \"text\": \"Read the following text aloud with a dramatic, authoritative narration voice. Speak clearly with good pacing:\\n\\n\" + $('Code2').item.json.output\n        }\n      ]\n    }\n  ],\n  \"generationConfig\": {\n    \"responseModalities\": [\"AUDIO\"],\n    \"speechConfig\": {\n      \"voiceConfig\": {\n        \"prebuiltVoiceConfig\": {\n          \"voiceName\": \"Kore\"\n        }\n      }\n    }\n  }\n}",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          }
+        }
       },
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
@@ -1179,6 +1178,19 @@
           "name": "NVIDIA Nemotron account"
         }
       }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Extract base64 PCM audio from Vertex AI Gemini Flash TTS response\n// and convert to binary WAV format for downstream processing\n\nconst response = $input.first().json;\nconst audioBase64 = response.candidates[0].content.parts[0].inlineData.data;\nconst mimeType = response.candidates[0].content.parts[0].inlineData.mimeType;\n\n// Decode base64 to binary\nconst audioBuffer = Buffer.from(audioBase64, 'base64');\n\n// Create WAV header for PCM 24kHz 16-bit mono\nconst numChannels = 1;\nconst sampleRate = 24000;\nconst bitsPerSample = 16;\nconst byteRate = sampleRate * numChannels * bitsPerSample / 8;\nconst blockAlign = numChannels * bitsPerSample / 8;\nconst dataSize = audioBuffer.length;\nconst headerSize = 44;\n\nconst wavBuffer = Buffer.alloc(headerSize + dataSize);\n\n// RIFF header\nwavBuffer.write('RIFF', 0);\nwavBuffer.writeUInt32LE(36 + dataSize, 4);\nwavBuffer.write('WAVE', 8);\n\n// fmt chunk\nwavBuffer.write('fmt ', 12);\nwavBuffer.writeUInt32LE(16, 16);\nwavBuffer.writeUInt16LE(1, 20);  // PCM format\nwavBuffer.writeUInt16LE(numChannels, 22);\nwavBuffer.writeUInt32LE(sampleRate, 24);\nwavBuffer.writeUInt32LE(byteRate, 28);\nwavBuffer.writeUInt16LE(blockAlign, 32);\nwavBuffer.writeUInt16LE(bitsPerSample, 34);\n\n// data chunk\nwavBuffer.write('data', 36);\nwavBuffer.writeUInt32LE(dataSize, 40);\naudioBuffer.copy(wavBuffer, 44);\n\nreturn [{\n  json: {\n    mimeType: 'audio/wav',\n    fileName: 'tts_output.wav',\n    fileSize: wavBuffer.length\n  },\n  binary: {\n    data: await this.helpers.prepareBinaryData(wavBuffer, 'tts_output.wav', 'audio/wav')\n  }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -14660,
+        -25
+      ],
+      "id": "267d507f-423a-416d-b50b-ce8729cfcf3c",
+      "name": "Convert TTS Audio"
     }
   ],
   "pinData": {},
@@ -1744,7 +1756,7 @@
       "main": [
         [
           {
-            "node": "S3",
+            "node": "Convert TTS Audio",
             "type": "main",
             "index": 0
           }
@@ -1845,6 +1857,17 @@
           {
             "node": "Output Parser \ud83d\udee0",
             "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert TTS Audio": {
+      "main": [
+        [
+          {
+            "node": "S3",
+            "type": "main",
             "index": 0
           }
         ]

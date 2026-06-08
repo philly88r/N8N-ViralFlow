@@ -1648,17 +1648,6 @@
         ]
       ]
     },
-    "Ollama Chat Model3": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "Image Prompter V2 \ud83d\udcf7",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Compose Clip": {
       "main": [
         [
@@ -1736,28 +1725,6 @@
         ]
       ]
     },
-    "Ollama Chat Model": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Ollama Chat Model1": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent1",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Open Router - Deepseek v3.1": {
       "ai_languageModel": [
         [
@@ -1819,6 +1786,39 @@
           {
             "node": "AI Agent",
             "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "NVIDIA NIM - Nemotron 3 Ultra (Primary)": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Image Prompter V2 \ud83d\udcf7",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "NVIDIA NIM - Nemotron 3 Ultra (Backup 1)": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "NVIDIA NIM - Nemotron 3 Ultra (Backup 2)": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent1",
+            "type": "ai_languageModel",
             "index": 0
           }
         ]

@@ -915,18 +915,19 @@
     {
       "parameters": {
         "model": "nvidia/nemotron-3-ultra-550b-a55b",
-        "options": {}
+        "options": {},
+        "baseURL": "https://integrate.api.nvidia.com/v1"
       },
-      "type": "@n8n/n8n-nodes-langchain.lmChatOpenRouter",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
       "typeVersion": 1,
       "position": [
         -12820,
         70
       ],
       "id": "de77fc1f-0dda-44af-9a14-dbe2972acbb3",
-      "name": "OpenRouter - Gemini 2.5 Flash (Backup)",
+      "name": "NVIDIA NIM - Nemotron 3 Ultra (Primary)",
       "credentials": {
-        "openRouterApi": "OpenRouter API"
+        "openAiApi": "NVIDIA NIM"
       }
     },
     {
@@ -1057,53 +1058,38 @@
     },
     {
       "parameters": {
-        "model": "moonshotai/kimi-k2.6:free",
-        "options": {}
+        "model": "nvidia/nemotron-3-ultra-550b-a55b",
+        "options": {},
+        "baseURL": "https://integrate.api.nvidia.com/v1"
       },
-      "type": "@n8n/n8n-nodes-langchain.lmChatOpenRouter",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
       "typeVersion": 1,
       "position": [
         -16320,
         195
       ],
       "id": "472b3cd6-dde1-4aff-aedb-285e7ed2b3ff",
-      "name": "OpenRouter - Kimi K2.6 (Primary)",
+      "name": "NVIDIA NIM - Nemotron 3 Ultra (Backup 1)",
       "credentials": {
-        "openRouterApi": "OpenRouter API"
+        "openAiApi": "NVIDIA NIM"
       }
     },
     {
       "parameters": {
         "model": "nvidia/nemotron-3-ultra-550b-a55b",
-        "options": {}
+        "options": {},
+        "baseURL": "https://integrate.api.nvidia.com/v1"
       },
-      "type": "@n8n/n8n-nodes-langchain.lmChatOpenRouter",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
       "typeVersion": 1,
       "position": [
         -15740,
         195
       ],
       "id": "986a3eca-5121-4c06-aa2a-02d5ab51862a",
-      "name": "OpenRouter - Gemini 2.5 Pro (Backup)",
+      "name": "NVIDIA NIM - Nemotron 3 Ultra (Backup 2)",
       "credentials": {
-        "openRouterApi": "OpenRouter API"
-      }
-    },
-    {
-      "parameters": {
-        "model": "moonshotai/kimi-k2.6:free",
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.lmChatOpenRouter",
-      "typeVersion": 1,
-      "position": [
-        -15220,
-        195
-      ],
-      "id": "a6286da4-f2d0-4419-a3f7-fafc4c9c2d0a",
-      "name": "OpenRouter - Kimi K2.6 (Primary)",
-      "credentials": {
-        "openRouterApi": "OpenRouter API"
+        "openAiApi": "NVIDIA NIM"
       }
     },
     {

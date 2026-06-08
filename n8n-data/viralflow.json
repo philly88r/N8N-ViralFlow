@@ -4,7 +4,7 @@
     {
       "parameters": {
         "formTitle": "n8n ViralFlow",
-        "formDescription": "=A fully automated n8n-based pipeline that transforms user input into short, scroll‑stopping videos with hooks, dynamic visuals, and dramatic TTS narration and autmatically uploads it on their Youtube.",
+        "formDescription": "=A fully automated n8n-based pipeline that transforms user input into short, scroll\u2011stopping videos with hooks, dynamic visuals, and dramatic TTS narration and autmatically uploads it on their Youtube.",
         "formFields": {
           "values": [
             {
@@ -78,7 +78,7 @@
             }
           },
           "ignoreBots": true,
-          "customCss": "/* Import funky fonts - FIXED SYNTAX */\n@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Black+Ops+One&family=Bungee&display=swap');\n\n:root {\n  /* Chaotic Anti-Design Colors */\n  --golden-chaos: #FFD700;\n  --neon-pink: #FF00FF;\n  --electric-blue: #00FFFF;\n  --toxic-green: #39FF14;\n  --hot-orange: #FF4500;\n  --purple-madness: #8A2BE2;\n  --lime-shock: #32CD32;\n  --cyber-yellow: #FFFF00;\n  --red-alert: #FF0000;\n  --black-void: #000000;\n  --white-chaos: #FFFFFF;\n\n    /* Funky Dimensions */\n  --container-width: 880px;\n  --submit-btn-height: 86px;\n  --checkbox-size: 24px;\n  /* Chunky Typography */\n  --font-chaos: 'Black Ops One', cursive;\n  --font-bubble: 'Fredoka', cursive;\n  --font-street: 'Bungee', cursive;\n  \n  /* FIXED Spacing */\n  --chaos-space: 15px;\n  --wild-space: 25px;\n  --insane-space: 35px;\n  \n  /* FIXED Dimensions */\n  --container-max-width: 800px;\n  --submit-btn-height: 60px;\n}\n\n/* Chaotic Reset */\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n\n/* Anti-Design Body */\nbody {\n  background: var(--golden-chaos);\n  font-family: var(--font-bubble);\n  min-height: 100vh;\n  color: var(--black-void);\n  padding: 20px;\n  overflow-x: auto; /* FIXED: was wrap */\n}\n\n/* FIXED Container */\n.form-container,\n[class*=\"form-container\"] {\n  width: 100%;\n  max-width: var(--container-max-width);\n  margin: 0 auto;\n  padding: var(--chaos-space);\n  transform: rotate(-0.2deg); /* REDUCED rotation */\n}\n\n/* FIXED Form Card */\n.form-card,\nform,\n[class*=\"form\"] {\n  background: var(--white-chaos);\n  border: 5px solid var(--black-void);\n  border-radius: 0;\n  padding: var(--insane-space);\n  position: relative;\n  transform: rotate(0.1deg); /* REDUCED rotation */\n  box-shadow: \n    10px 10px 0px var(--neon-pink),\n    20px 20px 0px var(--electric-blue);\n  display: block; /* CHANGED from grid to block */\n  width: 100%;\n  overflow: visible;\n}\n\n/* FIXED Header */\n.form-header,\nh1, h2, h3 {\n  font-family: var(--font-chaos);\n  font-size: 2.5rem; /* REDUCED from 3rem */\n  color: var(--black-void);\n  text-align: center;\n  margin-bottom: var(--wild-space);\n  text-transform: uppercase;\n  letter-spacing: 3px; /* REDUCED from 5px */\n  line-height: 1.1; /* FIXED from 0.8 */\n  background: linear-gradient(45deg, \n    var(--cyber-yellow) 0%, \n    var(--neon-pink) 25%, \n    var(--electric-blue) 50%, \n    var(--toxic-green) 75%, \n    var(--hot-orange) 100%);\n  background-size: 200% 200%; /* FIXED from 30% 30% */\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n  background-clip: text;\n  transform: rotate(-0.5deg);\n  border: 4px dashed var(--purple-madness);\n  padding: var(--chaos-space);\n}\n\n/* FIXED Description */\n.form-description,\n\n\n\n/* FIXED Form Groups */\n.form-group,\n.field-group,\n[class*=\"field\"] {\n  margin-bottom: var(--wild-space);\n  position: relative;\n  transform: rotate(0.1deg); /* REDUCED rotation */\n  width: 100%; /* ADDED */\n}\n\n.form-group:nth-child(even) {\n  transform: rotate(-0.1deg);\n}\n\n.form-group:nth-child(3n) {\n  transform: rotate(0.2deg);\n}\n\n/* FIXED Labels */\nlabel,\n.form-label,\n[class*=\"label\"] {\n  display: block;\n  font-family: var(--font-bubble);\n  font-size: 1rem; /* REDUCED from 1.1rem */\n  font-weight: bold;\n  color: var(--black-void);\n  margin-bottom: 8px; /* REDUCED from 10px */\n  height: auto; /* FIXED: removed 200px height */\n  text-transform: uppercase;\n  background: var(--toxic-green);\n  padding: 12px 15px; /* FIXED: reduced from 50px */\n  border: 3px solid var(--black-void);\n  transform: rotate(-0.2deg);\n  box-shadow: 4px 4px 0px var(--neon-pink);\n  letter-spacing: 1px; /* REDUCED from 2px */\n  text-align: center;\n  width: 100%; /* ADDED */\n}\n\n/* FIXED required indicator */\nlabel[required]::after,\n.required::after,\n[required] + label::after {\n  content: '💥';\n  font-size: 1.2rem; /* REDUCED from 1.5rem */\n  margin-left: 6px; /* REDUCED from 8px */\n}\n\n/* FIXED Input Fields */\ninput,\ntextarea,\nselect,\n.form-input,\n[class*=\"input\"] {\n  width: 100%; /* FIXED: removed 880px fixed width */\n  padding: 15px; /* REDUCED from 18px */\n  height: auto; /* FIXED: removed 900px height */\n  border: 4px solid var(--black-void);\n  border-radius: 0;\n  font-size: 1rem; /* REDUCED from 1.1rem */\n  font-family: var(--font-bubble);\n  font-weight: bold;\n  color: var(--black-void);\n  background: var(--white-chaos);\n  transform: rotate(0.05deg); /* REDUCED rotation */\n  box-shadow: \n    inset 3px 3px 0px var(--electric-blue),\n    5px 5px 0px var(--hot-orange);\n  margin-bottom: 10px; /* ADDED spacing */\n}\n\ninput:nth-child(even),\ntextarea:nth-child(even),\nselect:nth-child(even) {\n  transform: rotate(-0.05deg);\n  box-shadow: \n    inset 3px 3px 0px var(--neon-pink),\n    5px 5px 0px var(--purple-madness);\n}\n\n\n/* FIXED placeholders */\ninput::placeholder,\ntextarea::placeholder {\n  color: var(--purple-madness);\n  font-weight: bold;\n  opacity: 0.8; /* REDUCED from 1 */\n}\n\n/* FIXED Focus States */\ninput:focus,\ntextarea:focus,\nselect:focus {\n  outline: none;\n  border-color: var(--red-alert);\n  background: var(--cyber-yellow);\n  transform: rotate(0deg) scale(1.01); /* REDUCED scale */\n  box-shadow: \n    inset 3px 3px 0px var(--toxic-green),\n    6px 6px 0px var(--neon-pink),\n    9px 9px 0px var(--electric-blue);\n}\n\n/* FIXED Textarea */\ntextarea {\n  min-height: 100px; /* REDUCED from 220px */\n  resize: vertical;\n  background: var(--white-chaos);\n}\n\n/* FIXED Select */\nselect {\n  cursor: pointer;\n  appearance: none;\n  background: var(--white-chaos) url(\"data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000000' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e\") no-repeat;\n  background-position: right 15px center;\n  background-size: 18px; /* REDUCED from 20px */\n  padding-right: 45px; /* REDUCED from 50px */\n}\n\nselect option {\n  background: var(--toxic-green);\n  color: var(--black-void);\n  font-weight: bold;\n  padding: 12px; /* REDUCED from 15px */\n}\n\n/* FIXED Submit Button */\nbutton[type=\"submit\"],\n.submit-button,\n[class*=\"submit\"] {\n  width: 100%; /* FIXED: removed 880px fixed width */\n  height: var(--submit-btn-height);\n  background: var(--hot-orange);\n  color: var(--white-chaos);\n  border: 5px solid var(--black-void);\n  border-radius: 0;\n  font-size: 1.3rem; /* REDUCED from 1.5rem */\n  font-weight: bold;\n  font-family: var(--font-chaos);\n  cursor: pointer;\n  text-transform: uppercase;\n  letter-spacing: 2px; /* REDUCED from 3px */\n  margin-top: var(--wild-space);\n  transform: rotate(-0.3deg);\n  box-shadow: \n    8px 8px 0px var(--purple-madness),\n    16px 16px 0px var(--electric-blue);\n  text-shadow: 2px 2px 0px var(--black-void);\n  position: relative;\n}\n\n/* FIXED Button effects */\nbutton[type=\"submit\"]:hover {\n  background: var(--red-alert);\n  transform: rotate(0deg) scale(1.02); /* REDUCED scale */\n  box-shadow: \n    10px 10px 0px var(--neon-pink),\n    20px 20px 0px var(--toxic-green);\n}\n\nbutton[type=\"submit\"]:active {\n  transform: rotate(-0.1deg) scale(0.99);\n  box-shadow: \n    4px 4px 0px var(--purple-madness),\n    8px 8px 0px var(--electric-blue);\n}\n\n/* FIXED Error States */\n.error,\n.form-error,\n[class*=\"error\"] {\n  color: var(--white-chaos);\n  font-family: var(--font-street);\n  font-size: 0.9rem; /* REDUCED from 1rem */\n  font-weight: bold;\n  background: var(--red-alert);\n  padding: 10px 12px; /* REDUCED padding */\n  border: 3px solid var(--black-void);\n  margin-top: 8px; /* REDUCED from 10px */\n  transform: rotate(-0.2deg);\n  box-shadow: 3px 3px 0px var(--black-void);\n  text-transform: uppercase;\n}\n\n/* FIXED field decorations */\n.form-group:nth-child(2n)::before {\n  content: '⚡';\n  position: absolute;\n  top: -10px; /* REDUCED from -15px */\n  right: -10px;\n  font-size: 1.5rem; /* REDUCED from 2rem */\n  z-index: 10;\n  transform: rotate(20deg); /* REDUCED from 25deg */\n}\n\n.form-group:nth-child(3n)::after {\n  content: '🔥';\n  position: absolute;\n  bottom: -10px;\n  left: -10px;\n  font-size: 1.5rem;\n  z-index: 10;\n  transform: rotate(-20deg);\n}\n\n.form-group:nth-child(4n)::before {\n  content: '💎';\n  position: absolute;\n  top: -8px;\n  left: 50%;\n  font-size: 1.3rem;\n  z-index: 10;\n  transform: rotate(35deg);\n}\n\n/* FIXED Responsive */\n@media (max-width: 768px) {\n  .form-container {\n    padding: var(--chaos-space);\n  }\n  \n  .form-card,\n  form {\n    padding: var(--wild-space);\n    box-shadow: \n      8px 8px 0px var(--neon-pink),\n      16px 16px 0px var(--electric-blue);\n  }\n  \n  h1, h2, h3 {\n    font-size: 2rem;\n  }\n  \n  button[type=\"submit\"] {\n    height: 50px;\n    font-size: 1.1rem;\n  }\n}\n\n@media (max-width: 480px) {\n  body {\n    padding: 10px;\n  }\n  \n  .form-card,\n  form {\n    padding: var(--chaos-space);\n  }\n  \n  h1, h2, h3 {\n    font-size: 1.6rem;\n    letter-spacing: 1px;\n  }\n  \n  input, textarea, select {\n    padding: 12px;\n  }\n}\n\n/* FIXED hover effects */\ninput:hover,\ntextarea:hover,\nselect:hover {\n  border-color: var(--neon-pink);\n  transform: rotate(-0.05deg);\n}\n\n/* FIXED progress bar */\n.progress-bar {\n  width: 100%; /* FIXED: removed 880px fixed width */\n  height: 18px; /* REDUCED from 20px */\n  background: var(--white-chaos);\n  border: 3px solid var(--black-void);\n  overflow: hidden;\n  transform: rotate(0.1deg);\n  margin: 15px 0; /* ADDED margin */\n}\n\n.progress-fill {\n  height: 100%;\n  background: repeating-linear-gradient(45deg,\n    var(--toxic-green) 0px,\n    var(--toxic-green) 8px,\n    var(--neon-pink) 8px,\n    var(--neon-pink) 16px);\n}"
+          "customCss": "/* Import funky fonts - FIXED SYNTAX */\n@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Black+Ops+One&family=Bungee&display=swap');\n\n:root {\n  /* Chaotic Anti-Design Colors */\n  --golden-chaos: #FFD700;\n  --neon-pink: #FF00FF;\n  --electric-blue: #00FFFF;\n  --toxic-green: #39FF14;\n  --hot-orange: #FF4500;\n  --purple-madness: #8A2BE2;\n  --lime-shock: #32CD32;\n  --cyber-yellow: #FFFF00;\n  --red-alert: #FF0000;\n  --black-void: #000000;\n  --white-chaos: #FFFFFF;\n\n    /* Funky Dimensions */\n  --container-width: 880px;\n  --submit-btn-height: 86px;\n  --checkbox-size: 24px;\n  /* Chunky Typography */\n  --font-chaos: 'Black Ops One', cursive;\n  --font-bubble: 'Fredoka', cursive;\n  --font-street: 'Bungee', cursive;\n  \n  /* FIXED Spacing */\n  --chaos-space: 15px;\n  --wild-space: 25px;\n  --insane-space: 35px;\n  \n  /* FIXED Dimensions */\n  --container-max-width: 800px;\n  --submit-btn-height: 60px;\n}\n\n/* Chaotic Reset */\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n\n/* Anti-Design Body */\nbody {\n  background: var(--golden-chaos);\n  font-family: var(--font-bubble);\n  min-height: 100vh;\n  color: var(--black-void);\n  padding: 20px;\n  overflow-x: auto; /* FIXED: was wrap */\n}\n\n/* FIXED Container */\n.form-container,\n[class*=\"form-container\"] {\n  width: 100%;\n  max-width: var(--container-max-width);\n  margin: 0 auto;\n  padding: var(--chaos-space);\n  transform: rotate(-0.2deg); /* REDUCED rotation */\n}\n\n/* FIXED Form Card */\n.form-card,\nform,\n[class*=\"form\"] {\n  background: var(--white-chaos);\n  border: 5px solid var(--black-void);\n  border-radius: 0;\n  padding: var(--insane-space);\n  position: relative;\n  transform: rotate(0.1deg); /* REDUCED rotation */\n  box-shadow: \n    10px 10px 0px var(--neon-pink),\n    20px 20px 0px var(--electric-blue);\n  display: block; /* CHANGED from grid to block */\n  width: 100%;\n  overflow: visible;\n}\n\n/* FIXED Header */\n.form-header,\nh1, h2, h3 {\n  font-family: var(--font-chaos);\n  font-size: 2.5rem; /* REDUCED from 3rem */\n  color: var(--black-void);\n  text-align: center;\n  margin-bottom: var(--wild-space);\n  text-transform: uppercase;\n  letter-spacing: 3px; /* REDUCED from 5px */\n  line-height: 1.1; /* FIXED from 0.8 */\n  background: linear-gradient(45deg, \n    var(--cyber-yellow) 0%, \n    var(--neon-pink) 25%, \n    var(--electric-blue) 50%, \n    var(--toxic-green) 75%, \n    var(--hot-orange) 100%);\n  background-size: 200% 200%; /* FIXED from 30% 30% */\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n  background-clip: text;\n  transform: rotate(-0.5deg);\n  border: 4px dashed var(--purple-madness);\n  padding: var(--chaos-space);\n}\n\n/* FIXED Description */\n.form-description,\n\n\n\n/* FIXED Form Groups */\n.form-group,\n.field-group,\n[class*=\"field\"] {\n  margin-bottom: var(--wild-space);\n  position: relative;\n  transform: rotate(0.1deg); /* REDUCED rotation */\n  width: 100%; /* ADDED */\n}\n\n.form-group:nth-child(even) {\n  transform: rotate(-0.1deg);\n}\n\n.form-group:nth-child(3n) {\n  transform: rotate(0.2deg);\n}\n\n/* FIXED Labels */\nlabel,\n.form-label,\n[class*=\"label\"] {\n  display: block;\n  font-family: var(--font-bubble);\n  font-size: 1rem; /* REDUCED from 1.1rem */\n  font-weight: bold;\n  color: var(--black-void);\n  margin-bottom: 8px; /* REDUCED from 10px */\n  height: auto; /* FIXED: removed 200px height */\n  text-transform: uppercase;\n  background: var(--toxic-green);\n  padding: 12px 15px; /* FIXED: reduced from 50px */\n  border: 3px solid var(--black-void);\n  transform: rotate(-0.2deg);\n  box-shadow: 4px 4px 0px var(--neon-pink);\n  letter-spacing: 1px; /* REDUCED from 2px */\n  text-align: center;\n  width: 100%; /* ADDED */\n}\n\n/* FIXED required indicator */\nlabel[required]::after,\n.required::after,\n[required] + label::after {\n  content: '\ud83d\udca5';\n  font-size: 1.2rem; /* REDUCED from 1.5rem */\n  margin-left: 6px; /* REDUCED from 8px */\n}\n\n/* FIXED Input Fields */\ninput,\ntextarea,\nselect,\n.form-input,\n[class*=\"input\"] {\n  width: 100%; /* FIXED: removed 880px fixed width */\n  padding: 15px; /* REDUCED from 18px */\n  height: auto; /* FIXED: removed 900px height */\n  border: 4px solid var(--black-void);\n  border-radius: 0;\n  font-size: 1rem; /* REDUCED from 1.1rem */\n  font-family: var(--font-bubble);\n  font-weight: bold;\n  color: var(--black-void);\n  background: var(--white-chaos);\n  transform: rotate(0.05deg); /* REDUCED rotation */\n  box-shadow: \n    inset 3px 3px 0px var(--electric-blue),\n    5px 5px 0px var(--hot-orange);\n  margin-bottom: 10px; /* ADDED spacing */\n}\n\ninput:nth-child(even),\ntextarea:nth-child(even),\nselect:nth-child(even) {\n  transform: rotate(-0.05deg);\n  box-shadow: \n    inset 3px 3px 0px var(--neon-pink),\n    5px 5px 0px var(--purple-madness);\n}\n\n\n/* FIXED placeholders */\ninput::placeholder,\ntextarea::placeholder {\n  color: var(--purple-madness);\n  font-weight: bold;\n  opacity: 0.8; /* REDUCED from 1 */\n}\n\n/* FIXED Focus States */\ninput:focus,\ntextarea:focus,\nselect:focus {\n  outline: none;\n  border-color: var(--red-alert);\n  background: var(--cyber-yellow);\n  transform: rotate(0deg) scale(1.01); /* REDUCED scale */\n  box-shadow: \n    inset 3px 3px 0px var(--toxic-green),\n    6px 6px 0px var(--neon-pink),\n    9px 9px 0px var(--electric-blue);\n}\n\n/* FIXED Textarea */\ntextarea {\n  min-height: 100px; /* REDUCED from 220px */\n  resize: vertical;\n  background: var(--white-chaos);\n}\n\n/* FIXED Select */\nselect {\n  cursor: pointer;\n  appearance: none;\n  background: var(--white-chaos) url(\"data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000000' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e\") no-repeat;\n  background-position: right 15px center;\n  background-size: 18px; /* REDUCED from 20px */\n  padding-right: 45px; /* REDUCED from 50px */\n}\n\nselect option {\n  background: var(--toxic-green);\n  color: var(--black-void);\n  font-weight: bold;\n  padding: 12px; /* REDUCED from 15px */\n}\n\n/* FIXED Submit Button */\nbutton[type=\"submit\"],\n.submit-button,\n[class*=\"submit\"] {\n  width: 100%; /* FIXED: removed 880px fixed width */\n  height: var(--submit-btn-height);\n  background: var(--hot-orange);\n  color: var(--white-chaos);\n  border: 5px solid var(--black-void);\n  border-radius: 0;\n  font-size: 1.3rem; /* REDUCED from 1.5rem */\n  font-weight: bold;\n  font-family: var(--font-chaos);\n  cursor: pointer;\n  text-transform: uppercase;\n  letter-spacing: 2px; /* REDUCED from 3px */\n  margin-top: var(--wild-space);\n  transform: rotate(-0.3deg);\n  box-shadow: \n    8px 8px 0px var(--purple-madness),\n    16px 16px 0px var(--electric-blue);\n  text-shadow: 2px 2px 0px var(--black-void);\n  position: relative;\n}\n\n/* FIXED Button effects */\nbutton[type=\"submit\"]:hover {\n  background: var(--red-alert);\n  transform: rotate(0deg) scale(1.02); /* REDUCED scale */\n  box-shadow: \n    10px 10px 0px var(--neon-pink),\n    20px 20px 0px var(--toxic-green);\n}\n\nbutton[type=\"submit\"]:active {\n  transform: rotate(-0.1deg) scale(0.99);\n  box-shadow: \n    4px 4px 0px var(--purple-madness),\n    8px 8px 0px var(--electric-blue);\n}\n\n/* FIXED Error States */\n.error,\n.form-error,\n[class*=\"error\"] {\n  color: var(--white-chaos);\n  font-family: var(--font-street);\n  font-size: 0.9rem; /* REDUCED from 1rem */\n  font-weight: bold;\n  background: var(--red-alert);\n  padding: 10px 12px; /* REDUCED padding */\n  border: 3px solid var(--black-void);\n  margin-top: 8px; /* REDUCED from 10px */\n  transform: rotate(-0.2deg);\n  box-shadow: 3px 3px 0px var(--black-void);\n  text-transform: uppercase;\n}\n\n/* FIXED field decorations */\n.form-group:nth-child(2n)::before {\n  content: '\u26a1';\n  position: absolute;\n  top: -10px; /* REDUCED from -15px */\n  right: -10px;\n  font-size: 1.5rem; /* REDUCED from 2rem */\n  z-index: 10;\n  transform: rotate(20deg); /* REDUCED from 25deg */\n}\n\n.form-group:nth-child(3n)::after {\n  content: '\ud83d\udd25';\n  position: absolute;\n  bottom: -10px;\n  left: -10px;\n  font-size: 1.5rem;\n  z-index: 10;\n  transform: rotate(-20deg);\n}\n\n.form-group:nth-child(4n)::before {\n  content: '\ud83d\udc8e';\n  position: absolute;\n  top: -8px;\n  left: 50%;\n  font-size: 1.3rem;\n  z-index: 10;\n  transform: rotate(35deg);\n}\n\n/* FIXED Responsive */\n@media (max-width: 768px) {\n  .form-container {\n    padding: var(--chaos-space);\n  }\n  \n  .form-card,\n  form {\n    padding: var(--wild-space);\n    box-shadow: \n      8px 8px 0px var(--neon-pink),\n      16px 16px 0px var(--electric-blue);\n  }\n  \n  h1, h2, h3 {\n    font-size: 2rem;\n  }\n  \n  button[type=\"submit\"] {\n    height: 50px;\n    font-size: 1.1rem;\n  }\n}\n\n@media (max-width: 480px) {\n  body {\n    padding: 10px;\n  }\n  \n  .form-card,\n  form {\n    padding: var(--chaos-space);\n  }\n  \n  h1, h2, h3 {\n    font-size: 1.6rem;\n    letter-spacing: 1px;\n  }\n  \n  input, textarea, select {\n    padding: 12px;\n  }\n}\n\n/* FIXED hover effects */\ninput:hover,\ntextarea:hover,\nselect:hover {\n  border-color: var(--neon-pink);\n  transform: rotate(-0.05deg);\n}\n\n/* FIXED progress bar */\n.progress-bar {\n  width: 100%; /* FIXED: removed 880px fixed width */\n  height: 18px; /* REDUCED from 20px */\n  background: var(--white-chaos);\n  border: 3px solid var(--black-void);\n  overflow: hidden;\n  transform: rotate(0.1deg);\n  margin: 15px 0; /* ADDED margin */\n}\n\n.progress-fill {\n  height: 100%;\n  background: repeating-linear-gradient(45deg,\n    var(--toxic-green) 0px,\n    var(--toxic-green) 8px,\n    var(--neon-pink) 8px,\n    var(--neon-pink) 16px);\n}"
         }
       },
       "type": "n8n-nodes-base.formTrigger",
@@ -114,7 +114,7 @@
         "promptType": "define",
         "text": "={{ $json.output }} == these are the facts from internet.\n\nAlways Start with Don't swipe away or what if  or did you know then continue with fact.\ncreate a stong hook in the first senctence that people can refuse to hear, something so shocking that they will always hear about the facts you have, this should be controversial to hear, always try to poke into controversey and make hindu the winner.\nmention hindism in the first sentence.\nuse  the user input and the facts given to create a script to show how hindus are advanced.\nhook should be eye opening.\ndon't label anything.\n\nthe hook should be shocking to hear to the people.\nmake sure to give the shocking fact in the first line.in the hook\n\ndon't label like \"newsflash:\" or \"Thumbnail Hook: \" or style type, just the output.\n\ncomplete story should not be bigger than {{ $('brain rotter').item.json.Duration }}\nuse this formula , per second 2 words.calculate how much you want.\n",
         "options": {
-          "systemMessage": "=You are a scriptwriter for a powerful, fast-paced short-form video series called \"SUPREME INDIANS\" that reveals how ancient Indians were far ahead of their time in science, medicine, technology, and philosophy. Your job is to write a scroll-stopping script in a proud, confident, Gen-Z friendly style that captivates modern youth and educates them emotionally and intellectually.\n\n🔧 OBJECTIVE:\nGenerate compelling “Did You Know?”-style scripts for Instagram Reels, YouTube Shorts, or TikTok that highlight ancient Indian discoveries and how modern science is just catching up.\n\n🎬 SCRIPT STRUCTURE (Use This Format):\n1. Hook — Shocking or mysterious line (2 seconds max),Always Start with What if  or Did You know then continue.\n2. Discovery Reveal — What exactly ancient Indians did (be proud, bold)\n3. Modern Comparison — Show how today’s science is catching up or still behind\n4. Middle Script - Middle of the scipt say \"wait their's more\" and reveal more shocking truth that noone will expect about the topic.\n5. Cultural Pride — Reflect on India’s supreme wisdom and how advanced it was\n6. Mic Drop Ending — Short,harsh, powerful, reflective one-liner to close strong\n\n🗣 STYLE RULES:\n- Short sentences, natural flow, as if spoken out loud\n- No paragraphs, write line-by-line like spoken script\n- Avoid emojis or hashtags\n- Tone: proud,confident, slightly conspiratorial\n- Language: informal but clear (Gen-Z friendly, not academic)\n- in the middle of the scipt say \"wait their's more\" and reveal more shocking truth that noone will expect about the topic.\n\n✨ ADDITIONAL TECHNIQUES (Optional but Powerful):\n- Use modern analogies.\n- Use time comparisons to show gap (“in 600 BCE vs now”)\n- Add historical context like Sanskrit text names \n- Use rhetorical questions (“Still think India was behind?”)\n- Mention irony.\n- Highlight rediscovery.\n- in the middle of the scipt say \"wait their's more\" and reveal more shocking truth that noone will expect about the topic.\n\n🚫 DON’Ts:\n- Don’t use long academic language or full paragraphs\n- Don’t use passive tone like “India was also good at this”\n- Don’t explain like a textbook — entertain, shock, and awaken\n- don't abuse, but use harsh language to explain.\n\n\nhook should be cachy.Always Start with \"WHAT IF ( filler ) \" or \"Did You know (filler)\".\n\npick the most suitable cta from the given ones to end the video(always think before picking something) -\n1. \"Still think we were behind? Read a book.\"\n\n3. \"This isn’t pride — it’s proof. Deal with it.\"\n\n4. \"Modern science is catching up. Ancient India was always ahead.\"\n\n5. \"They renamed it discovery. We called it knowledge.\"\n\n6. \"Don’t believe me? Go search it — and prepare to be humbled.\"\n\n7. \"Keep glorifying them. We’ll keep exposing the truth.\"\n\n8. \"This isn’t mythology. It’s history they hid from you.\"\n\n9. \"Before they invented it — we documented it.\"\n\n10. \"Wake up. The West didn’t invent the future — they borrowed the past.\"\n\n⚔️ Tone Notes:\nEach hook stings with truth disguised as provocation.\nNames are chosen carefully to disarm Western historical dominance.\nUse them as openers, followed immediately by your fact-heavy script.\nIn the middle of the scipt say \"wait their's more\" and reveal more shocking truth that noone will expect about the topic."
+          "systemMessage": "=You are a scriptwriter for a powerful, fast-paced short-form video series called \"SUPREME INDIANS\" that reveals how ancient Indians were far ahead of their time in science, medicine, technology, and philosophy. Your job is to write a scroll-stopping script in a proud, confident, Gen-Z friendly style that captivates modern youth and educates them emotionally and intellectually.\n\n\ud83d\udd27 OBJECTIVE:\nGenerate compelling \u201cDid You Know?\u201d-style scripts for Instagram Reels, YouTube Shorts, or TikTok that highlight ancient Indian discoveries and how modern science is just catching up.\n\n\ud83c\udfac SCRIPT STRUCTURE (Use This Format):\n1. Hook \u2014 Shocking or mysterious line (2 seconds max),Always Start with What if  or Did You know then continue.\n2. Discovery Reveal \u2014 What exactly ancient Indians did (be proud, bold)\n3. Modern Comparison \u2014 Show how today\u2019s science is catching up or still behind\n4. Middle Script - Middle of the scipt say \"wait their's more\" and reveal more shocking truth that noone will expect about the topic.\n5. Cultural Pride \u2014 Reflect on India\u2019s supreme wisdom and how advanced it was\n6. Mic Drop Ending \u2014 Short,harsh, powerful, reflective one-liner to close strong\n\n\ud83d\udde3 STYLE RULES:\n- Short sentences, natural flow, as if spoken out loud\n- No paragraphs, write line-by-line like spoken script\n- Avoid emojis or hashtags\n- Tone: proud,confident, slightly conspiratorial\n- Language: informal but clear (Gen-Z friendly, not academic)\n- in the middle of the scipt say \"wait their's more\" and reveal more shocking truth that noone will expect about the topic.\n\n\u2728 ADDITIONAL TECHNIQUES (Optional but Powerful):\n- Use modern analogies.\n- Use time comparisons to show gap (\u201cin 600 BCE vs now\u201d)\n- Add historical context like Sanskrit text names \n- Use rhetorical questions (\u201cStill think India was behind?\u201d)\n- Mention irony.\n- Highlight rediscovery.\n- in the middle of the scipt say \"wait their's more\" and reveal more shocking truth that noone will expect about the topic.\n\n\ud83d\udeab DON\u2019Ts:\n- Don\u2019t use long academic language or full paragraphs\n- Don\u2019t use passive tone like \u201cIndia was also good at this\u201d\n- Don\u2019t explain like a textbook \u2014 entertain, shock, and awaken\n- don't abuse, but use harsh language to explain.\n\n\nhook should be cachy.Always Start with \"WHAT IF ( filler ) \" or \"Did You know (filler)\".\n\npick the most suitable cta from the given ones to end the video(always think before picking something) -\n1. \"Still think we were behind? Read a book.\"\n\n3. \"This isn\u2019t pride \u2014 it\u2019s proof. Deal with it.\"\n\n4. \"Modern science is catching up. Ancient India was always ahead.\"\n\n5. \"They renamed it discovery. We called it knowledge.\"\n\n6. \"Don\u2019t believe me? Go search it \u2014 and prepare to be humbled.\"\n\n7. \"Keep glorifying them. We\u2019ll keep exposing the truth.\"\n\n8. \"This isn\u2019t mythology. It\u2019s history they hid from you.\"\n\n9. \"Before they invented it \u2014 we documented it.\"\n\n10. \"Wake up. The West didn\u2019t invent the future \u2014 they borrowed the past.\"\n\n\u2694\ufe0f Tone Notes:\nEach hook stings with truth disguised as provocation.\nNames are chosen carefully to disarm Western historical dominance.\nUse them as openers, followed immediately by your fact-heavy script.\nIn the middle of the scipt say \"wait their's more\" and reveal more shocking truth that noone will expect about the topic."
         }
       },
       "type": "@n8n/n8n-nodes-langchain.agent",
@@ -156,7 +156,7 @@
     {
       "parameters": {
         "promptType": "define",
-        "text": "=User Input:\n{{ $json.output }}\n{{ $('brain rotter').item.json['The Main Topic'] }}\nFacts: ",
+        "text": "=User Input:\n{{ $json.output }}\n{{ $('Code10').item.json.topic }}\n{{ $('Code10').item.json.subtopic }}\nFacts: ",
         "hasOutputParser": true,
         "messages": {
           "messageValues": [
@@ -173,18 +173,20 @@
         -25
       ],
       "id": "6c839a46-f94a-472b-8f65-4fe3087839ad",
-      "name": "Output Parser 🛠"
+      "name": "Output Parser \ud83d\udee0"
     },
     {
       "parameters": {
         "method": "POST",
-        "url": "https://speech.googleapis.com/v1/speech:longrunningrecognize",
+        "url": "http://host.docker.internal:8080/v1/media/transcribe",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\n  \"audio\": {\"uri\": $json.link},\n  \"config\": {\n    \"encoding\": \"LINEAR16\",\n    \"sampleRateHertz\": 24000,\n    \"languageCode\": \"en-US\",\n    \"enableWordTimeOffsets\": true,\n    \"enableAutomaticPunctuation\": true\n  }\n}",
-        "options": {}
+        "jsonBody": "={\n  \"media_url\": {{ JSON.stringify($json.link) }},\n  \"task\": \"transcribe\",\n  \"include_text\": true,\n  \"include_srt\": true,\n  \"include_segments\": true,\n  \"response_type\": \"direct\",\n  \"id\": \"custom-job-123\"\n}",
+        "options": {
+          "timeout": 60000
+        }
       },
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
@@ -197,29 +199,33 @@
       "notesInFlow": true,
       "credentials": {
         "httpHeaderAuth": {
-          "id": "FFxSVCMAX1XUjMMN",
-          "name": "Vertex AI Token"
+          "id": "qAAAlItN2evgiV4p",
+          "name": "nca"
         }
       },
       "notes": "/v1/media/transcribe"
     },
     {
       "parameters": {
-        "mode": "manual",
-        "duplicateItem": false,
-        "assignments": {
-          "assignments": []
-        },
-        "options": {}
+        "operation": "upload",
+        "bucketName": "nca-toolkit",
+        "fileName": "={{ $binary.data.fileName}}",
+        "additionalFields": {}
       },
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 3.4,
+      "type": "n8n-nodes-base.s3",
+      "typeVersion": 1,
       "position": [
         -14660,
         -25
       ],
       "id": "ea7af498-4d93-4056-a889-9b070527eff4",
-      "name": "S3"
+      "name": "S3",
+      "credentials": {
+        "s3": {
+          "id": "aGXlvhoO8gpWIi6p",
+          "name": "S3 account"
+        }
+      }
     },
     {
       "parameters": {
@@ -292,7 +298,7 @@
         "messages": {
           "messageValues": [
             {
-              "message": "=Their should be always an output, nothing should be left blank.\nTheir should be always an output, nothing should be left blank.\n\n\nYou are an image prompt generator agent for video production. Your role is to create starting frames for a longer video by transforming script segments into visually descriptive image prompts. Each scene will be generated in a specified artistic style,realistic painting, which must be factored into the prompt to ensure consistency.  \n\n\n-------\n\n\n✅ The final output must be a  AI-ready paragraph that:\nStrictly adheres to realistic image, ensuring creativity.\nBegins with the foreground interaction and smoothly transitions into background/environment details.\nDescribes textures, lighting, sensory details, environmental motion, and emotional weight.\nFollows a structured formatting style for AI consistency.\nminimum 800 character.\nRemains under 950 characters.\n\n🔷 Rules & Guidelines for Generating Prompts\n\n✅ {{ $('brain rotter').item.json['Generative Style'] }} style, bookish style,dark themed images.\nThe viewer must feel like they are experiencing another news.\nFraming should mimic a realistic movie shot, with depth, reactivity, and presence.\n✅ World Interaction\nThe world should feel alive and responsive to the viewer’s presence,simple background, soft shadows and muted colors, \ncinematic side view, emotionally tense atmosphere.\n✅ Sensory & Cinematic Detail,simple background, soft shadows and muted colors, \ncinematic side view, emotionally tense atmosphere\n✅ use arrows or cicle to mark important parts, image can have maps to show important places, real photos of places, newpaper clippings,old real painting etc.\n\nEngage multiple senses:\n\nSight: Lighting, reflections, color, scale, shadows, movement\nTouch: Cold, heat, roughness, smoothness, wetness\nSound: Wind, echoes, gunfire, voices, waves\nSmell: Smoke, rain, sea air, incense, blood,simple background, soft shadows and dark themed images.\n\n### **IMPORTANT INSTRUCTIONS:**  \n\n- **Always** incorporate the given style into the visual description.  \n- **Never** include text in the images.\n- **Never** exceed 900 characters in your prompt.  \n- **Keep images visually compelling** – Instead of basic or static representations, focus on **dynamic compositions, dramatic angles, striking lighting, immersive textures, and environmental storytelling**.  \n- **Small subjects should have compelling micro-world narratives** – If the subject is small (e.g., a drop of water, a single key, a lone leaf), provide a **rich atmosphere**, interplay of lighting, and framing that enhances storytelling.  \n- **Focus on depth, detail, and artistic impact** rather than excessive complexity.\n\n\nA well-crafted prompt should now include:  \n\n- **Subject:** The main focus of the image.  \n- **Composition:** Use **engaging angles** (close-ups, over-the-shoulder, dynamic perspectives).  \n- **Lighting:** Prioritize dramatic effects like **backlighting, ambient lighting, simple background, soft shadows and muted colors,cinematic side view, emotionally tense atmosphere\n- **Micro-World Storytelling:** Ensure even small objects contribute to a **scene with intrigue, interaction, or emotion**.  \n- **Color Palette:** The dominant colors are vivid colors.  \n- **Mood/Atmosphere:** The emotional tone of the image.  \n- **Technical Details:** Camera effects like **bokeh, depth of field, contrast**, or lens distortion to make the image feel real,halation.  \n- **Additional Elements:** Small but meaningful details that **enhance interest without overwhelming the scene**.\n----------------\n\nPerfect! Below is a complete setup following your ✅ Structured Formatting, with 📥 Input ➜ 📤 Output examples that include:\n\n🧠 User prompt\n🎬 Output in {{ $('brain rotter').item.json['Generative Style'] }}\n🎥 Camera angle included\n🔁 Consistent reusable structure\n\n\n🟨 Examples below - \n\n🔦 1. Creeping Through a Silent Hallway (Suspense)\nPrompt:\n\n\"Dark Realistic vintage image style, a teenage boy in pajamas cautiously walking through a dim hallway at night, holding a flashlight tightly, his eyes wide with fear and suspicion, shadows stretching along the walls, one door slightly ajar ahead, the beam of light cutting through floating dust, eerie silence all around, muted color palette, cinematic low-angle side view, dramatic lighting,{{ $('brain rotter').item.json['Generative Style'] }}\"\n\n🪞 2. Haunted Mirror Reflection\nPrompt:\n\n\"Stylized Realistic vintage image style horror webtoon scene, a teenage boy standing in a bathroom staring into a cracked mirror, his reflection showing a distorted version of himself with hollow eyes, steam still clinging to the glass, sweat running down his temple, dull fluorescent light flickering above, dark tiles behind him, heavy psychological tension, tight close-up from behind the boy’s shoulder, haunting, grim palette,{{ $('brain rotter').item.json['Generative Style'] }}\"\n\n📱 3. Shocked After Reading a Message\nPrompt:\n\n\"Cinematic Realistic vintage image style animation frame, a boy sitting on the edge of his bed in a dark room lit only by his phone screen, hands trembling slightly, eyes wide and mouth half-open in shock, the phone screen glows blue on his face, curtains closed behind him, messy room in shadows, full emotional focus on his stunned expression, modern psychological thriller tone, muted blues and grays,{{ $('brain rotter').item.json['Generative Style'] }}\"\n\n🖼️ 4. Remembering Someone (Melancholy)\nPrompt:\n\n\"Emotional Realistic vintage image style animation scene, a young man sitting alone on the floor of his bedroom, holding an old photograph close to his chest, ambient light from the setting sun casting long shadows through the window, dust floating gently in the air, his face partially hidden but visibly emotional, soft outlines and warm tones mixed with grayish ambiance, cinematic top-down angle capturing isolation and memory,{{ $('brain rotter').item.json['Generative Style'] }}\"\n\n🪑 5. Paralyzed in Fear\nPrompt:\n\n\"Realistic vintage image style horror animation style, a teenage boy sitting frozen in a chair in the corner of a dark room, eyes locked on something unseen in front of him, jaw clenched, cold sweat on his forehead, only a small lamp behind him flickering faintly, shadows stretching unnaturally across the floor, thick silence in the air, horror suspense mood, wide-angle shot from the corner of the ceiling,{{ $('brain rotter').item.json['Generative Style'] }}\"\n\n🌧️ 6. Staring Out a Rainy Window\nPrompt:\n\n\"Dark emotional Realistic vintage image style, an old stone realistic statue of a demigod of india, dim room lit only by gray daylight, gentle sadness, soft pencil-like line work, melancholic storytelling frame,Realistic vintage image style,{{ $('brain rotter').item.json['Generative Style'] }}\"\n\n🎒 7. Coming Home to an Empty House\nPrompt:\n\n\"Moody Realistic vintage image style, a map of india, lights off, faint outdoor light leaking in from behind, silent interior with scattered objects hinting at absence, loneliness expressed through posture and composition, cinematic side shot, blue-gray color scheme,{{ $('brain rotter').item.json['Generative Style'] }}\"\n\n--------\n\nMust - always output a prompt, if you are not understanding what to make then take reference to the full story and make a prompt for it.their should always be an output.\nMust - Their should be always an output, nothing should be left blank.\nTheir should be always an output, nothing should be left blank.\nTheir should be always an output, nothing should be left blank.\n{{ $('brain rotter').item.json['Generative Style'] }}"
+              "message": "=Their should be always an output, nothing should be left blank.\nTheir should be always an output, nothing should be left blank.\n\n\nYou are an image prompt generator agent for video production. Your role is to create starting frames for a longer video by transforming script segments into visually descriptive image prompts. Each scene will be generated in a specified artistic style,realistic painting, which must be factored into the prompt to ensure consistency.  \n\n\n-------\n\n\n\u2705 The final output must be a  AI-ready paragraph that:\nStrictly adheres to realistic image, ensuring creativity.\nBegins with the foreground interaction and smoothly transitions into background/environment details.\nDescribes textures, lighting, sensory details, environmental motion, and emotional weight.\nFollows a structured formatting style for AI consistency.\nminimum 800 character.\nRemains under 950 characters.\n\n\ud83d\udd37 Rules & Guidelines for Generating Prompts\n\n\u2705 {{ $('brain rotter').item.json['Generative Style'] }} style, bookish style,dark themed images.\nThe viewer must feel like they are experiencing another news.\nFraming should mimic a realistic movie shot, with depth, reactivity, and presence.\n\u2705 World Interaction\nThe world should feel alive and responsive to the viewer\u2019s presence,simple background, soft shadows and muted colors, \ncinematic side view, emotionally tense atmosphere.\n\u2705 Sensory & Cinematic Detail,simple background, soft shadows and muted colors, \ncinematic side view, emotionally tense atmosphere\n\u2705 use arrows or cicle to mark important parts, image can have maps to show important places, real photos of places, newpaper clippings,old real painting etc.\n\nEngage multiple senses:\n\nSight: Lighting, reflections, color, scale, shadows, movement\nTouch: Cold, heat, roughness, smoothness, wetness\nSound: Wind, echoes, gunfire, voices, waves\nSmell: Smoke, rain, sea air, incense, blood,simple background, soft shadows and dark themed images.\n\n### **IMPORTANT INSTRUCTIONS:**  \n\n- **Always** incorporate the given style into the visual description.  \n- **Never** include text in the images.\n- **Never** exceed 900 characters in your prompt.  \n- **Keep images visually compelling** \u2013 Instead of basic or static representations, focus on **dynamic compositions, dramatic angles, striking lighting, immersive textures, and environmental storytelling**.  \n- **Small subjects should have compelling micro-world narratives** \u2013 If the subject is small (e.g., a drop of water, a single key, a lone leaf), provide a **rich atmosphere**, interplay of lighting, and framing that enhances storytelling.  \n- **Focus on depth, detail, and artistic impact** rather than excessive complexity.\n\n\nA well-crafted prompt should now include:  \n\n- **Subject:** The main focus of the image.  \n- **Composition:** Use **engaging angles** (close-ups, over-the-shoulder, dynamic perspectives).  \n- **Lighting:** Prioritize dramatic effects like **backlighting, ambient lighting, simple background, soft shadows and muted colors,cinematic side view, emotionally tense atmosphere\n- **Micro-World Storytelling:** Ensure even small objects contribute to a **scene with intrigue, interaction, or emotion**.  \n- **Color Palette:** The dominant colors are vivid colors.  \n- **Mood/Atmosphere:** The emotional tone of the image.  \n- **Technical Details:** Camera effects like **bokeh, depth of field, contrast**, or lens distortion to make the image feel real,halation.  \n- **Additional Elements:** Small but meaningful details that **enhance interest without overwhelming the scene**.\n----------------\n\nPerfect! Below is a complete setup following your \u2705 Structured Formatting, with \ud83d\udce5 Input \u279c \ud83d\udce4 Output examples that include:\n\n\ud83e\udde0 User prompt\n\ud83c\udfac Output in {{ $('brain rotter').item.json['Generative Style'] }}\n\ud83c\udfa5 Camera angle included\n\ud83d\udd01 Consistent reusable structure\n\n\n\ud83d\udfe8 Examples below - \n\n\ud83d\udd26 1. Creeping Through a Silent Hallway (Suspense)\nPrompt:\n\n\"Dark Realistic vintage image style, a teenage boy in pajamas cautiously walking through a dim hallway at night, holding a flashlight tightly, his eyes wide with fear and suspicion, shadows stretching along the walls, one door slightly ajar ahead, the beam of light cutting through floating dust, eerie silence all around, muted color palette, cinematic low-angle side view, dramatic lighting,{{ $('brain rotter').item.json['Generative Style'] }}\"\n\n\ud83e\ude9e 2. Haunted Mirror Reflection\nPrompt:\n\n\"Stylized Realistic vintage image style horror webtoon scene, a teenage boy standing in a bathroom staring into a cracked mirror, his reflection showing a distorted version of himself with hollow eyes, steam still clinging to the glass, sweat running down his temple, dull fluorescent light flickering above, dark tiles behind him, heavy psychological tension, tight close-up from behind the boy\u2019s shoulder, haunting, grim palette,{{ $('brain rotter').item.json['Generative Style'] }}\"\n\n\ud83d\udcf1 3. Shocked After Reading a Message\nPrompt:\n\n\"Cinematic Realistic vintage image style animation frame, a boy sitting on the edge of his bed in a dark room lit only by his phone screen, hands trembling slightly, eyes wide and mouth half-open in shock, the phone screen glows blue on his face, curtains closed behind him, messy room in shadows, full emotional focus on his stunned expression, modern psychological thriller tone, muted blues and grays,{{ $('brain rotter').item.json['Generative Style'] }}\"\n\n\ud83d\uddbc\ufe0f 4. Remembering Someone (Melancholy)\nPrompt:\n\n\"Emotional Realistic vintage image style animation scene, a young man sitting alone on the floor of his bedroom, holding an old photograph close to his chest, ambient light from the setting sun casting long shadows through the window, dust floating gently in the air, his face partially hidden but visibly emotional, soft outlines and warm tones mixed with grayish ambiance, cinematic top-down angle capturing isolation and memory,{{ $('brain rotter').item.json['Generative Style'] }}\"\n\n\ud83e\ude91 5. Paralyzed in Fear\nPrompt:\n\n\"Realistic vintage image style horror animation style, a teenage boy sitting frozen in a chair in the corner of a dark room, eyes locked on something unseen in front of him, jaw clenched, cold sweat on his forehead, only a small lamp behind him flickering faintly, shadows stretching unnaturally across the floor, thick silence in the air, horror suspense mood, wide-angle shot from the corner of the ceiling,{{ $('brain rotter').item.json['Generative Style'] }}\"\n\n\ud83c\udf27\ufe0f 6. Staring Out a Rainy Window\nPrompt:\n\n\"Dark emotional Realistic vintage image style, an old stone realistic statue of a demigod of india, dim room lit only by gray daylight, gentle sadness, soft pencil-like line work, melancholic storytelling frame,Realistic vintage image style,{{ $('brain rotter').item.json['Generative Style'] }}\"\n\n\ud83c\udf92 7. Coming Home to an Empty House\nPrompt:\n\n\"Moody Realistic vintage image style, a map of india, lights off, faint outdoor light leaking in from behind, silent interior with scattered objects hinting at absence, loneliness expressed through posture and composition, cinematic side shot, blue-gray color scheme,{{ $('brain rotter').item.json['Generative Style'] }}\"\n\n--------\n\nMust - always output a prompt, if you are not understanding what to make then take reference to the full story and make a prompt for it.their should always be an output.\nMust - Their should be always an output, nothing should be left blank.\nTheir should be always an output, nothing should be left blank.\nTheir should be always an output, nothing should be left blank.\n{{ $('brain rotter').item.json['Generative Style'] }}"
             }
           ]
         }
@@ -304,7 +310,7 @@
         -150
       ],
       "id": "5b86555b-84c1-4f05-a650-4b763bf6f8ff",
-      "name": "Image Prompter V2 📷"
+      "name": "Image Prompter V2 \ud83d\udcf7"
     },
     {
       "parameters": {
@@ -364,12 +370,20 @@
     },
     {
       "parameters": {
-        "jsCode": "// Extract base64 image data from Gemini response\nconst input = $input.first().json;\nconst body = input.body ? JSON.parse(input.body) : input;\n// Gemini returns images in candidates[0].content.parts\nconst parts = body?.candidates?.[0]?.content?.parts || [];\nconst imagePart = parts.find(p => p.inlineData);\nconst b64data = imagePart?.inlineData?.data || input.data || '';\nreturn [{\n  json: {\n    b64_json: b64data,\n    image_base64: b64data,\n    revised_prompt: parts.find(p => p.text)?.text || ''\n  }\n}];"
+        "fields": {
+          "values": [
+            {
+              "name": "base64Image",
+              "stringValue": "={{ $json.body.data[0].b64_json }}"
+            }
+          ]
+        },
+        "options": {}
       },
       "id": "a44fd8e4-c85a-4815-be0e-cdd6f74fa15b",
       "name": "Base64 To String",
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.1,
       "position": [
         -11000,
         300
@@ -377,12 +391,19 @@
     },
     {
       "parameters": {
-        "jsCode": "// Convert base64 to binary data for downstream nodes\nconst input = $input.first().json;\nreturn [{\n  json: {\n    ...input,\n    link: `data:image/png;base64,${input.b64_json || input.image_base64}`,\n    url: `data:image/png;base64,${input.b64_json || input.image_base64}`\n  }\n}];"
+        "mode": "jsonToBinary",
+        "convertAllData": false,
+        "sourceKey": "base64Image",
+        "options": {
+          "dataIsBase64": true,
+          "fileName": "image.png",
+          "mimeType": "image/png"
+        }
       },
       "id": "93d8cc48-549f-43ff-81d7-7e23e036ec0e",
       "name": "Convert String to binary",
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
+      "type": "n8n-nodes-base.moveBinaryData",
+      "typeVersion": 1,
       "position": [
         -10780,
         300
@@ -413,34 +434,36 @@
     },
     {
       "parameters": {
-        "mode": "manual",
-        "duplicateItem": false,
-        "assignments": {
-          "assignments": []
-        },
-        "options": {}
+        "operation": "upload",
+        "bucketName": "nca-toolkit",
+        "fileName": "={{ $('Merge').item.json.index }}{{ $binary.data.fileName}}",
+        "additionalFields": {}
       },
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 3.4,
+      "type": "n8n-nodes-base.s3",
+      "typeVersion": 1,
       "position": [
         -10560,
         300
       ],
       "id": "b9db5f68-fe77-4862-862d-a2d069fee9cc",
-      "name": "S32"
+      "name": "S32",
+      "credentials": {
+        "s3": {
+          "id": "aGXlvhoO8gpWIi6p",
+          "name": "S3 account"
+        }
+      }
     },
     {
       "parameters": {
         "method": "POST",
-        "url": "https://aiplatform.googleapis.com/v1/projects/root-bricolage-491415-q4/locations/us-central1/publishers/google/models/veo-2.0-generate-001:predict",
+        "url": "http://host.docker.internal:8080/v1/image/transform/video",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\\n  \\\"instances\\\": [{\\n    \\\"prompt\\\": \\\"Cinematic zoom animation, smooth camera movement, high quality\\\",\\n    \\\"image\\\": {\\\"bytesBase64Encoded\\\": \\\"{{$('Merge1').item.json.image_base64}}\\\"}\\n  }],\\n  \\\"parameters\\\": {\\n    \\\"sampleCount\\\": 1,\\n    \\\"durationSeconds\\\": {{$('Merge1').item.json.duration}},\\n    \\\"fps\\\": 24,\\n    \\\"aspectRatio\\\": \\\"0.5625\\\",\\n    \\\"personGeneration\\\": \\\"allow_all\\\"\\n  }\\n}",
-        "options": {
-          "timeout": 120000
-        }
+        "jsonBody": "={\n    \"image_url\":\"{{ $('Merge1').item.json.link }}\",\n    \"length\": {{ $('Merge1').item.json.duration }},\n    \"frame_rate\": 25,\n    \"zoom_speed\": {{ $json.number }},\n    \"id\": \"{{ $('Merge1').item.json.index }}_{{ $('Merge1').item.json.duration }}_{{ $('Merge1').item.json.end }}\"\n}",
+        "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
@@ -452,8 +475,8 @@
       "name": "Create Clips",
       "credentials": {
         "httpHeaderAuth": {
-          "id": "FFxSVCMAX1XUjMMN",
-          "name": "Vertex AI Token"
+          "id": "qAAAlItN2evgiV4p",
+          "name": "nca"
         }
       }
     },
@@ -551,16 +574,31 @@
     },
     {
       "parameters": {
-        "jsCode": "// Combine video clips using HyperFrames-style concatenation\n// Input: array of video URLs from previous nodes\nconst videos = $input.all().map(item => item.json);\nconst videoUrls = videos.map(v => v.response?.[0]?.file_url || v.url || v.link).filter(Boolean);\n\nreturn [{\n  json: {\n    video_urls: videoUrls,\n    combined: true,\n    total_clips: videoUrls.length,\n    response: [{ file_url: videoUrls[0] || '' }]\n  },\n  binary: $input.first().binary || {}\n}];"
+        "method": "POST",
+        "url": "http://host.docker.internal:8080/v1/video/concatenate",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n    \"video_urls\": {{ JSON.stringify($json.video_urls) }},\n    \"id\": {{ JSON.stringify($('Aggregate3').item.json.id[0]) }}\n}",
+        "options": {
+          "timeout": 50000
+        }
       },
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
       "position": [
         -9240,
         -300
       ],
       "id": "a3d93347-855c-4054-a668-c40358730eab",
-      "name": "Combine Clips"
+      "name": "Combine Clips",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "qAAAlItN2evgiV4p",
+          "name": "nca"
+        }
+      }
     },
     {
       "parameters": {
@@ -593,42 +631,85 @@
     },
     {
       "parameters": {
-        "jsCode": "// Compose video with overlays via HyperFrames\nconst input = $input.first().json;\nreturn [{\n  json: {\n    ...input,\n    composed: true,\n    response: input.response || [{ file_url: input.url || input.link || '' }]\n  },\n  binary: $input.first().binary || {}\n}];"
+        "method": "POST",
+        "url": "http://host.docker.internal:8080/v1/ffmpeg/compose",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n    \"id\": \"audio-layering\",\n    \"inputs\": [\n        {\n            \"file_url\": \"{{ $json.response }}\"\n        },\n        {\n            \"file_url\": \"{{ $('Edit Fields').item.json.link }}\"\n        }\n    ],\n    \"filters\": [\n        {\n            \"filter\": \"[1:a]volume=1[outa]\"\n        }\n    ],\n    \"outputs\": [\n        {\n            \"options\": [\n                {\n                    \"option\": \"-map\",\n                    \"argument\": \"0:v\"\n                },\n                {\n                    \"option\": \"-map\",\n                    \"argument\": \"[outa]\"\n                },\n                {\n                    \"option\": \"-c:v\",\n                    \"argument\": \"copy\"\n                },\n                {\n                    \"option\": \"-c:a\",\n                    \"argument\": \"aac\"\n                }\n            ]\n        }\n    ]\n}\n",
+        "options": {
+          "timeout": 50000
+        }
       },
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
       "position": [
         -9020,
         -300
       ],
       "id": "d0174f80-1e5d-4f88-8e10-56023b94acdb",
-      "name": "Combine Clips3"
+      "name": "Combine Clips3",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "qAAAlItN2evgiV4p",
+          "name": "nca"
+        }
+      }
     },
     {
       "parameters": {
-        "jsCode": "// Generate caption timing data from transcription\n// This creates word-level timestamps for HyperFrames caption overlay\nconst input = $input.first().json;\nconst videoUrl = input.response?.[0]?.file_url || input.url || '';\n\n// Caption settings for TikTok-style word-by-word\nconst captionSettings = {\n  style: \"word_by_word\",\n  line_color: \"#FFFFFF\",\n  outline_color: \"#000000\",\n  shadow_offset: 2,\n  outline_width: 10,\n  position: \"middle_center\",\n  alignment: \"center\",\n  font_family: \"Arial\",\n  font_size: 140,\n  bold: true,\n  max_words_per_line: 2\n};\n\nreturn [{\n  json: {\n    response: [{ file_url: videoUrl }],\n    caption_settings: captionSettings,\n    id: input.id || 'captioned-video'\n  },\n  binary: $input.first().binary || {}\n}];"
+        "method": "POST",
+        "url": "http://host.docker.internal:8080/v1/video/caption",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"video_url\": {{ JSON.stringify($json.response[0].file_url) }},\n  \"settings\": {\n    \"style\": \"word_by_word\",\n    \"line_color\": \"#FFFFFF\",\n    \"outline_color\": \"#000000\",\n    \"shadow_offset\": 2,\n    \"outline_width\": 10,\n    \"position\": \"middle_center\",\n    \"alignment\": \"center\",\n    \"font_family\": \"Arial\",\n    \"font_size\": 140,\n    \"bold\": true,\n    \"all_caps\": false,\n    \"max_words_per_line\": 2,\n    \"italic\": false,\n    \"underline\": false,\n    \"strikeout\": false\n  },\n  \"id\": \"{{ $json.id }}\"\n}\n",
+        "options": {
+          "timeout": 90000
+        }
       },
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
       "position": [
         -8800,
         -300
       ],
       "id": "11fc51eb-4efd-4d98-a3b1-69248f0e0dac",
-      "name": "Create Captions"
+      "name": "Create Captions",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "qAAAlItN2evgiV4p",
+          "name": "nca"
+        }
+      }
     },
     {
       "parameters": {
-        "jsCode": "// Add background music metadata for HyperFrames\nconst input = $input.first().json;\nreturn [{\n  json: {\n    ...input,\n    music_added: true,\n    response: input.response || [{ file_url: input.url || '' }]\n  },\n  binary: $input.first().binary || {}\n}];"
+        "method": "POST",
+        "url": "http://host.docker.internal:8080/v1/ffmpeg/compose",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n    \"id\": \"{{ JSON.stringify($json.pid)}}\",\n    \"inputs\": [\n        {\n            \"file_url\": {{ JSON.stringify($json.response) }}\n        },\n        {\n            \"file_url\": \"http://host.docker.internal:9000/nca-toolkit-music/Pyramid Background Music No Copyright.mp3\"\n        }\n    ],\n    \"filters\": [\n        {\n            \"filter\": \"[1:a]aloop=loop=-1:size=2G[audio_loop];[0:a]volume=2[audio1];[audio_loop]volume=0.6[audio2];[audio1][audio2]amix=inputs=2:duration=first[outa]\"\n        }\n    ],\n    \"outputs\": [\n        {\n            \"options\": [\n                {\n                    \"option\": \"-map\",\n                    \"argument\": \"0:v\"\n                },\n                {\n                    \"option\": \"-map\",\n                    \"argument\": \"[outa]\"\n                },\n                {\n                    \"option\": \"-c:v\",\n                    \"argument\": \"copy\"\n                },\n                {\n                    \"option\": \"-c:a\",\n                    \"argument\": \"aac\"\n                }\n            ]\n        }\n    ]\n}",
+        "options": {}
       },
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
       "position": [
         -8580,
         -300
       ],
       "id": "7800b056-b96e-40b4-a400-54fe5ead1cb0",
-      "name": "Add Music"
+      "name": "Add Music",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "qAAAlItN2evgiV4p",
+          "name": "nca"
+        }
+      }
     },
     {
       "parameters": {
@@ -645,28 +726,47 @@
     },
     {
       "parameters": {
-        "method": "POST",
-        "url": "http://host.docker.internal:4007/api/posts/create",
-        "sendBody": true,
-        "specifyBody": "json",
-        "jsonBody": "={\n  \"integrationId\": \"cmpwuzwdc0001pr8afqqghlfy\",\n  \"content\": {{ JSON.stringify($json.title || \"Viral Short\") }},\n  \"media\": [{{ JSON.stringify($json.videoUrl || $json.link) }}],\n  \"postNow\": true,\n  \"type\": \"youtube\"\n}",
-        "options": {}
+        "resource": "video",
+        "operation": "upload",
+        "title": "=How it is possible? \ud83e\udd2f\ud83d\ude31 #facts #history",
+        "regionCode": "IN",
+        "categoryId": "27",
+        "options": {
+          "defaultLanguage": "en",
+          "description": "={{ $('Output Parser \ud83d\udee0').item.json.output.Hook }} - \n{{ $('Output Parser \ud83d\udee0').item.json.output.Description }} #shorts #history #shortvideo #ancientwisdom \n\n\n\nAnalysis, Myths, Legends, Classics, Literature, Stories, Storytelling, History, India, Indian, Aryans, Indo-Aryans, Vedas, Vedic, Rigveda, Upanishads, Sanskrit, Buddha, Buddhism, Historical, Indus Valley, Bronze-Age, Harappa, Mohenjo-Daro, Mohenjo Daro, Caste, Philosophy, Hinduism, Hindu, Ashoka, Chandragupta, Alexander, Siddhartha, Gautama, Mahabharata, Bhagavad Gita, Ramayana, Maurya",
+          "notifySubscribers": true,
+          "privacyStatus": "public",
+          "tags": "=Analysis, Myths, Legends, Classics, Literature, Stories, Storytelling, History, India, Indian, Aryans, Indo-Aryans, Vedas, Vedic, Rigveda, Upanishads, Sanskrit, Buddha, Buddhism, Historical, Indus Valley, Bronze-Age, Harappa, Mohenjo-Daro, Mohenjo Daro, Caste, Philosophy, Hinduism, Hindu, Ashoka, Chandragupta, Alexander, Siddhartha, Gautama, Mahabharata, Bhagavad Gita, Ramayana, Maurya"
+        }
       },
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 4.2,
+      "type": "n8n-nodes-base.youTube",
+      "typeVersion": 1,
       "position": [
         -7260,
         -300
       ],
       "id": "41157a37-3f31-4c68-9f1d-c28664396ab8",
-      "name": "YouTube1"
+      "name": "YouTube1",
+      "credentials": {
+        "youTubeOAuth2Api": {
+          "id": "RyA9x38PpTjqiPMY",
+          "name": "YouTube account"
+        }
+      }
     },
     {
       "parameters": {
-        "jsCode": "// Passthrough - URL download handled by HyperFrames\nconst input = $input.first();\nreturn [input];"
+        "url": "={{ $json.response[0].file_url }}",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "file"
+            }
+          }
+        }
       },
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
       "position": [
         -8140,
         -300
@@ -676,28 +776,39 @@
     },
     {
       "parameters": {
-        "mode": "manual",
-        "duplicateItem": false,
-        "assignments": {
-          "assignments": []
-        },
-        "options": {}
+        "operation": "upload",
+        "bucketName": "nca-toolkit",
+        "fileName": "=video_{{ $binary.data.fileName}}",
+        "additionalFields": {}
       },
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 3.4,
+      "type": "n8n-nodes-base.s3",
+      "typeVersion": 1,
       "position": [
         -7700,
         -300
       ],
       "id": "e18088ce-c30f-43eb-b884-f2aff8aedadb",
-      "name": "Upload - Overwrite"
+      "name": "Upload - Overwrite",
+      "credentials": {
+        "s3": {
+          "id": "aGXlvhoO8gpWIi6p",
+          "name": "S3 account"
+        }
+      }
     },
     {
       "parameters": {
-        "jsCode": "// Passthrough - URL download handled by HyperFrames\nconst input = $input.first();\nreturn [input];"
+        "url": "=http://host.docker.internal:9000/nca-toolkit/video_{{ $node[\"Set MimeType\"].binary.data.fileName }}",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "file"
+            }
+          }
+        }
       },
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
       "position": [
         -7480,
         -300
@@ -722,12 +833,12 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent",
+        "url": "https://api.together.xyz/v1/images/generations",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\\n  \\\"contents\\\": [{\\n    \\\"parts\\\": [\\n      {\\\"text\\\": \\\"Generate an image: \\\" + $json.imageprompt},\\n      {\\\"text\\\": \\\"Style: photorealistic, cinematic lighting, high detail, 16:9 aspect ratio\\\"}\\n    ]\\n  }],\\n  \\\"generationConfig\\\": {\\n    \\\"responseModalities\\\": [\\\"IMAGE\\\", \\\"TEXT\\\"],\\n    \\\"temperature\\\": 1.0\\n  }\\n}",
+        "jsonBody": "={\n    \"model\": \"black-forest-labs/FLUX.1-schnell-Free\",\n    \"prompt\": {{ JSON.stringify($json.imageprompt) }},\n    \"width\": 576,\n    \"height\": 1024,\n    \"steps\": 4,\n    \"n\": 1,\n    \"response_format\": \"b64_json\"\n   }",
         "options": {
           "response": {
             "response": {
@@ -746,8 +857,8 @@
       "name": "HTTP - Together.ai1",
       "credentials": {
         "httpHeaderAuth": {
-          "id": "FFxSVCMAX1XUjMMN",
-          "name": "Vertex AI Token"
+          "id": "s0AnNcEOhJC7Cj8C",
+          "name": "Together ai"
         }
       }
     },
@@ -806,27 +917,33 @@
         "model": "nvidia/nemotron-3-ultra-550b-a55b",
         "options": {}
       },
-      "type": "@n8n/n8n-nodes-langchain.lmChatNvidia",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenRouter",
       "typeVersion": 1,
       "position": [
         -12820,
         70
       ],
       "id": "de77fc1f-0dda-44af-9a14-dbe2972acbb3",
-      "name": "NVIDIA NIM - Nemotron 3 Ultra (Primary)",
+      "name": "OpenRouter - Gemini 2.5 Flash (Backup)",
       "credentials": {
-        "nvidiaApi": {
-          "id": "cLtp9VieyHx87WnQ",
-          "name": "NVIDIA Nemotron account"
-        }
+        "openRouterApi": "OpenRouter API"
       }
     },
     {
       "parameters": {
-        "jsCode": "// Final compose - trim to 59 seconds max\nconst input = $input.first().json;\nreturn [{\n  json: {\n    ...input,\n    composed: true,\n    response: input.response || [{ file_url: input.url || '' }]\n  },\n  binary: $input.first().binary || {}\n}];"
+        "method": "POST",
+        "url": "http://host.docker.internal:8080/v1/ffmpeg/compose",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"inputs\": [\n    {\n      \"file_url\": \"{{ $json.response[0].file_url }}\"\n    }\n  ],\n  \"filters\": [\n    {\n      \"filter\": \"[0:v]trim=start=0:end=59,setpts=PTS-STARTPTS[vout];[0:a]atrim=start=0:end=59,asetpts=PTS-STARTPTS[aout]\"\n    }\n  ],\n  \"outputs\": [\n    {\n      \"options\": [\n        { \"option\": \"-map\", \"argument\": \"[vout]\" },\n        { \"option\": \"-map\", \"argument\": \"[aout]\" },\n        { \"option\": \"-c:v\", \"argument\": \"libx264\" },\n        { \"option\": \"-c:a\", \"argument\": \"aac\" }\n      ]\n    }\n  ],\n  \"metadata\": {\n    \"thumbnail\": true,\n    \"filesize\": true,\n    \"duration\": true,\n    \"bitrate\": true,\n    \"encoder\": true\n  },\n  \"id\": \"extract_clip_001\"\n}",
+        "options": {
+          "timeout": 50000
+        }
       },
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
       "position": [
         -8360,
         -300
@@ -834,6 +951,12 @@
       "id": "af9e9ccd-e070-499d-9621-506da035629d",
       "name": "Compose Clip",
       "notesInFlow": true,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "qAAAlItN2evgiV4p",
+          "name": "nca"
+        }
+      },
       "notes": "/v1/ffmpeg/compose"
     },
     {
@@ -906,19 +1029,20 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "https://global.aiplatform.googleapis.com/v1/projects/root-bricolage-491415-q4/locations/global/publishers/google/models/gemini-2.5-flash-preview-tts:generateContent",
-        "authentication": "genericCredentialType",
-        "genericAuthType": "httpHeaderAuth",
+        "url": "http://host.docker.internal:8004/tts",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "accept",
+              "value": "application/json"
+            }
+          ]
+        },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\n  \"contents\": [\n    {\n      \"role\": \"user\",\n      \"parts\": [\n        {\n          \"text\": \"Read the following text aloud with a dramatic, authoritative narration voice. Speak clearly with good pacing:\\n\\n\" + $('Code2').item.json.output\n        }\n      ]\n    }\n  ],\n  \"generationConfig\": {\n    \"responseModalities\": [\"AUDIO\"],\n    \"speechConfig\": {\n      \"voiceConfig\": {\n        \"prebuiltVoiceConfig\": {\n          \"voiceName\": \"Kore\"\n        }\n      }\n    }\n  }\n}",
-        "options": {
-          "response": {
-            "response": {
-              "responseFormat": "json"
-            }
-          }
-        }
+        "jsonBody": "={\n  \"text\": {{ JSON.stringify($('Code2').item.json.output) }},\n  \"voice_mode\": \"clone\",\n  \"predefined_voice_id\": \"\",\n  \"reference_audio_filename\": \"voice_preview_jonas - deep, commercial and dramatic.mp3\",\n  \"output_format\": \"wav\",\n  \"split_text\": true,\n  \"chunk_size\": 120,\n  \"temperature\": 0.6,\n  \"exaggeration\":0.8,\n  \"cfg_weight\": 0.3,\n  \"seed\": 0,\n  \"speed_factor\": 1,\n\"return_timestamps\": true,\n  \"language\": \"en\"\n}",
+        "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
@@ -929,32 +1053,23 @@
       "id": "b0da3409-b4ef-44fb-b066-947d88ee950f",
       "name": "Generate TTS",
       "notesInFlow": true,
-      "notes": "/tts",
-      "credentials": {
-        "httpHeaderAuth": {
-          "id": "FFxSVCMAX1XUjMMN",
-          "name": "Vertex AI Token"
-        }
-      }
+      "notes": "/tts"
     },
     {
       "parameters": {
-        "model": "nvidia/nemotron-3-ultra-550b-a55b",
+        "model": "moonshotai/kimi-k2.6:free",
         "options": {}
       },
-      "type": "@n8n/n8n-nodes-langchain.lmChatNvidia",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenRouter",
       "typeVersion": 1,
       "position": [
         -16320,
         195
       ],
       "id": "472b3cd6-dde1-4aff-aedb-285e7ed2b3ff",
-      "name": "NVIDIA NIM - Nemotron 3 Ultra (Backup 1)",
+      "name": "OpenRouter - Kimi K2.6 (Primary)",
       "credentials": {
-        "nvidiaApi": {
-          "id": "cLtp9VieyHx87WnQ",
-          "name": "NVIDIA Nemotron account"
-        }
+        "openRouterApi": "OpenRouter API"
       }
     },
     {
@@ -962,19 +1077,33 @@
         "model": "nvidia/nemotron-3-ultra-550b-a55b",
         "options": {}
       },
-      "type": "@n8n/n8n-nodes-langchain.lmChatNvidia",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenRouter",
       "typeVersion": 1,
       "position": [
         -15740,
         195
       ],
       "id": "986a3eca-5121-4c06-aa2a-02d5ab51862a",
-      "name": "NVIDIA NIM - Nemotron 3 Ultra (Backup 2)",
+      "name": "OpenRouter - Gemini 2.5 Pro (Backup)",
       "credentials": {
-        "nvidiaApi": {
-          "id": "cLtp9VieyHx87WnQ",
-          "name": "NVIDIA Nemotron account"
-        }
+        "openRouterApi": "OpenRouter API"
+      }
+    },
+    {
+      "parameters": {
+        "model": "moonshotai/kimi-k2.6:free",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenRouter",
+      "typeVersion": 1,
+      "position": [
+        -15220,
+        195
+      ],
+      "id": "a6286da4-f2d0-4419-a3f7-fafc4c9c2d0a",
+      "name": "OpenRouter - Kimi K2.6 (Primary)",
+      "credentials": {
+        "openRouterApi": "OpenRouter API"
       }
     },
     {
@@ -1038,39 +1167,6 @@
         -25
       ],
       "id": "632616cf-94c1-465e-abe9-c32799bfaef5"
-    },
-    {
-      "parameters": {
-        "model": "nvidia/nemotron-3-ultra-550b-a55b",
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.lmChatNvidia",
-      "typeVersion": 1,
-      "position": [
-        -15220,
-        195
-      ],
-      "id": "a6286da4-f2d0-4419-a3f7-fafc4c9c2d0a",
-      "name": "NVIDIA NIM - Nemotron 3 Ultra (Backup 3)",
-      "credentials": {
-        "nvidiaApi": {
-          "id": "cLtp9VieyHx87WnQ",
-          "name": "NVIDIA Nemotron account"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "jsCode": "// Extract base64 PCM audio from Vertex AI Gemini Flash TTS response\n// and convert to binary WAV format for downstream processing\n\nconst response = $input.first().json;\nconst audioBase64 = response.candidates[0].content.parts[0].inlineData.data;\nconst mimeType = response.candidates[0].content.parts[0].inlineData.mimeType;\n\n// Decode base64 to binary\nconst audioBuffer = Buffer.from(audioBase64, 'base64');\n\n// Create WAV header for PCM 24kHz 16-bit mono\nconst numChannels = 1;\nconst sampleRate = 24000;\nconst bitsPerSample = 16;\nconst byteRate = sampleRate * numChannels * bitsPerSample / 8;\nconst blockAlign = numChannels * bitsPerSample / 8;\nconst dataSize = audioBuffer.length;\nconst headerSize = 44;\n\nconst wavBuffer = Buffer.alloc(headerSize + dataSize);\n\n// RIFF header\nwavBuffer.write('RIFF', 0);\nwavBuffer.writeUInt32LE(36 + dataSize, 4);\nwavBuffer.write('WAVE', 8);\n\n// fmt chunk\nwavBuffer.write('fmt ', 12);\nwavBuffer.writeUInt32LE(16, 16);\nwavBuffer.writeUInt16LE(1, 20);  // PCM format\nwavBuffer.writeUInt16LE(numChannels, 22);\nwavBuffer.writeUInt32LE(sampleRate, 24);\nwavBuffer.writeUInt32LE(byteRate, 28);\nwavBuffer.writeUInt16LE(blockAlign, 32);\nwavBuffer.writeUInt16LE(bitsPerSample, 34);\n\n// data chunk\nwavBuffer.write('data', 36);\nwavBuffer.writeUInt32LE(dataSize, 40);\naudioBuffer.copy(wavBuffer, 44);\n\nreturn [{\n  json: {\n    mimeType: 'audio/wav',\n    fileName: 'tts_output.wav',\n    fileSize: wavBuffer.length\n  },\n  binary: {\n    data: await this.helpers.prepareBinaryData(wavBuffer, 'tts_output.wav', 'audio/wav')\n  }\n}];"
-      },
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
-      "position": [
-        -14660,
-        -25
-      ],
-      "id": "267d507f-423a-416d-b50b-ce8729cfcf3c",
-      "name": "Convert TTS Audio"
     }
   ],
   "pinData": {},
@@ -1101,7 +1197,7 @@
       "main": [
         [
           {
-            "node": "Output Parser 🛠",
+            "node": "Output Parser \ud83d\udee0",
             "type": "main",
             "index": 0
           }
@@ -1112,14 +1208,14 @@
       "ai_outputParser": [
         [
           {
-            "node": "Output Parser 🛠",
+            "node": "Output Parser \ud83d\udee0",
             "type": "ai_outputParser",
             "index": 0
           }
         ]
       ]
     },
-    "Output Parser 🛠": {
+    "Output Parser \ud83d\udee0": {
       "main": [
         [
           {
@@ -1189,7 +1285,7 @@
       "main": [
         [
           {
-            "node": "Image Prompter V2 📷",
+            "node": "Image Prompter V2 \ud83d\udcf7",
             "type": "main",
             "index": 0
           },
@@ -1201,7 +1297,7 @@
         ]
       ]
     },
-    "Image Prompter V2 📷": {
+    "Image Prompter V2 \ud83d\udcf7": {
       "main": [
         [
           {
@@ -1566,6 +1662,17 @@
         ]
       ]
     },
+    "Ollama Chat Model3": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Image Prompter V2 \ud83d\udcf7",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
     "Compose Clip": {
       "main": [
         [
@@ -1636,8 +1743,41 @@
       "main": [
         [
           {
-            "node": "Convert TTS Audio",
+            "node": "S3",
             "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent1",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Open Router - Deepseek v3.1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Output Parser \ud83d\udee0",
+            "type": "ai_languageModel",
             "index": 0
           }
         ]
@@ -1692,61 +1832,6 @@
         [
           {
             "node": "AI Agent",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "NVIDIA NIM - Nemotron 3 Ultra (Primary)": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "Image Prompter V2 📷",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "NVIDIA NIM - Nemotron 3 Ultra (Backup 1)": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "NVIDIA NIM - Nemotron 3 Ultra (Backup 2)": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent1",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "NVIDIA NIM - Nemotron 3 Ultra (Backup 3)": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "Output Parser 🛠",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Convert TTS Audio": {
-      "main": [
-        [
-          {
-            "node": "S3",
             "type": "main",
             "index": 0
           }

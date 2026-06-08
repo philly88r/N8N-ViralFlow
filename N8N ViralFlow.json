@@ -1159,6 +1159,26 @@
         -25
       ],
       "id": "632616cf-94c1-465e-abe9-c32799bfaef5"
+    },
+    {
+      "parameters": {
+        "model": "nvidia/nemotron-3-ultra-550b-a55b",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatNvidia",
+      "typeVersion": 1,
+      "position": [
+        -15220,
+        195
+      ],
+      "id": "a6286da4-f2d0-4419-a3f7-fafc4c9c2d0a",
+      "name": "NVIDIA NIM - Nemotron 3 Ultra (Backup 3)",
+      "credentials": {
+        "nvidiaApi": {
+          "id": "cLtp9VieyHx87WnQ",
+          "name": "NVIDIA Nemotron account"
+        }
+      }
     }
   ],
   "pinData": {},
@@ -1731,17 +1751,6 @@
         ]
       ]
     },
-    "Open Router - Deepseek v3.1": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "Output Parser \ud83d\udee0",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "brain rotter": {
       "main": [
         [
@@ -1824,6 +1833,17 @@
         [
           {
             "node": "AI Agent1",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "NVIDIA NIM - Nemotron 3 Ultra (Backup 3)": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Output Parser \ud83d\udee0",
             "type": "ai_languageModel",
             "index": 0
           }

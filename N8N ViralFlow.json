@@ -915,10 +915,9 @@
     {
       "parameters": {
         "model": "nvidia/nemotron-3-ultra-550b-a55b",
-        "options": {},
-        "baseURL": "https://integrate.api.nvidia.com/v1"
+        "options": {}
       },
-      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "type": "@n8n/n8n-nodes-langchain.lmChatNvidia",
       "typeVersion": 1,
       "position": [
         -12820,
@@ -927,7 +926,10 @@
       "id": "de77fc1f-0dda-44af-9a14-dbe2972acbb3",
       "name": "NVIDIA NIM - Nemotron 3 Ultra (Primary)",
       "credentials": {
-        "openAiApi": "NVIDIA NIM"
+        "nvidiaApi": {
+          "id": "cLtp9VieyHx87WnQ",
+          "name": "NVIDIA Nemotron account"
+        }
       }
     },
     {
@@ -1059,10 +1061,9 @@
     {
       "parameters": {
         "model": "nvidia/nemotron-3-ultra-550b-a55b",
-        "options": {},
-        "baseURL": "https://integrate.api.nvidia.com/v1"
+        "options": {}
       },
-      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "type": "@n8n/n8n-nodes-langchain.lmChatNvidia",
       "typeVersion": 1,
       "position": [
         -16320,
@@ -1071,16 +1072,18 @@
       "id": "472b3cd6-dde1-4aff-aedb-285e7ed2b3ff",
       "name": "NVIDIA NIM - Nemotron 3 Ultra (Backup 1)",
       "credentials": {
-        "openAiApi": "NVIDIA NIM"
+        "nvidiaApi": {
+          "id": "cLtp9VieyHx87WnQ",
+          "name": "NVIDIA Nemotron account"
+        }
       }
     },
     {
       "parameters": {
         "model": "nvidia/nemotron-3-ultra-550b-a55b",
-        "options": {},
-        "baseURL": "https://integrate.api.nvidia.com/v1"
+        "options": {}
       },
-      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "type": "@n8n/n8n-nodes-langchain.lmChatNvidia",
       "typeVersion": 1,
       "position": [
         -15740,
@@ -1089,7 +1092,10 @@
       "id": "986a3eca-5121-4c06-aa2a-02d5ab51862a",
       "name": "NVIDIA NIM - Nemotron 3 Ultra (Backup 2)",
       "credentials": {
-        "openAiApi": "NVIDIA NIM"
+        "nvidiaApi": {
+          "id": "cLtp9VieyHx87WnQ",
+          "name": "NVIDIA Nemotron account"
+        }
       }
     },
     {
